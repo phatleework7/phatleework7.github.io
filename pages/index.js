@@ -4,7 +4,9 @@ export default function Home() {
   return (
     <>
       <Section id="about" title="About Me">
-        <p>Hello! I’m building things for the web. This is a simple Next.js site with light/dark mode.</p>
+        <p style={{ marginTop: 4 }}>
+          Hello! I’m building things for the web. This minimal site now features a focused developer-friendly theme, subtle depth, and clear typography for improved readability.
+        </p>
       </Section>
       <Section id="projects" title="Projects">
         <ul className="list">

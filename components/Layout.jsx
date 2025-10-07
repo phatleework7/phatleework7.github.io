@@ -5,7 +5,9 @@ export default function Layout({ children, theme, setTheme }) {
     <div className="container">
       <Navbar theme={theme} setTheme={setTheme} />
       <main>{children}</main>
-      <footer className="footer">© {new Date().getFullYear()} Your Name</footer>
+      <footer className="footer" role="contentinfo">
+        © {new Date().getFullYear()} Your Name
+      </footer>
     </div>
   );
 }
