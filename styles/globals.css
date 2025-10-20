@@ -127,7 +127,7 @@ main {
   margin-bottom: 6px;
 }
 
-.hero-title {
+z.hero-title {
   margin: 0 0 12px 0;
   font-size: clamp(2rem, 4vw + 1rem, 3.2rem);
   line-height: 1.05;

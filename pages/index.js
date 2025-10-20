@@ -13,13 +13,13 @@ export default function Home() {
       </Section>
       <Section id="projects" title="Projects">
         <div className="projects-grid">
-          <ProjectCard title="Landing Page Revamp" description="Modernized UI with better conversion and performance." href="#" />
+          <ProjectCard title="InsAI" description="AI-powered insurance claims processing system." href="#" />
           <ProjectCard title="Docs Portal" description="Developer-focused docs with fast search and clean typography." href="#" />
           <ProjectCard title="Dashboard" description="Real-time metrics with smooth motion and dark theme by default." href="#" />
         </div>
       </Section>
       <Section id="contact" title="Contact">
-        <p>Feel free to reach out: your.email@example.com</p>
+        <p>Feel free to reach out: phatlee.work7@gmail.com</p>
       </Section>
     </>
   );
