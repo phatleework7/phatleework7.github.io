@@ -21,3 +21,5 @@ npm start
 1. Push this repository to GitHub.
 2. Import the repo on https://vercel.com/new.
 3. Framework preset: Next.js, default settings. Click Deploy.
+
+# phatleework7.github.io
