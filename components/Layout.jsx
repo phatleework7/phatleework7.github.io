@@ -3,9 +3,19 @@ import Navbar from './Navbar';
 export default function Layout({ children, theme, setTheme }) {
   return (
     <div className="container">
+      <div id="route-progress" />
       <Navbar theme={theme} setTheme={setTheme} />
       <main>{children}</main>
-      <footer className="footer">© {new Date().getFullYear()} Your Name</footer>
+      <button
+        className="back-to-top"
+        aria-label="Back to top"
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      >
+        ↑
+      </button>
+      <footer className="footer" role="contentinfo">
+        © {new Date().getFullYear()} Le Thanh Phat
+      </footer>
     </div>
   );
 }
