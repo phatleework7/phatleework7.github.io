@@ -45,10 +45,10 @@ export default function Navbar({ theme, setTheme }) {
   return (
     <header className="navbar" role="banner" aria-label="Primary">
       <nav className="nav" role="navigation" aria-label="Main">
-        <a href="#" className="brand">Martin Le</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#" className="brand">Lê Thành Phát</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
         <ThemeToggle theme={theme} setTheme={setTheme} />
       </nav>
     </header>

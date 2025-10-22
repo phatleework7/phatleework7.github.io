@@ -40,4 +40,5 @@ export default function Section({ id, title, children }) {
       <div className="section-body">{children}</div>
     </motion.section>
   );
+  
 }
