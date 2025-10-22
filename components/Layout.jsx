@@ -14,7 +14,7 @@ export default function Layout({ children, theme, setTheme }) {
         ↑
       </button>
       <footer className="footer" role="contentinfo">
-        © {new Date().getFullYear()} Le Thanh Phat
+        © {new Date().getFullYear()} Lê Thành Phát. All rights reserved.
       </footer>
     </div>
   );
