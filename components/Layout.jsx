@@ -1,6 +1,10 @@
 import Navbar from './Navbar';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../data/translations';
 
 export default function Layout({ children, theme, setTheme }) {
+  const { language } = useLanguage();
+  const t = translations[language];
   return (
     <div className="container">
       <div id="route-progress" />
@@ -14,7 +18,7 @@ export default function Layout({ children, theme, setTheme }) {
         ↑
       </button>
       <footer className="footer" role="contentinfo">
-        © {new Date().getFullYear()} Lê Thành Phát. All rights reserved.
+        © {new Date().getFullYear()} {t.footer.copyright}
       </footer>
     </div>
   );

@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
+import { LanguageProvider } from '../contexts/LanguageContext';
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = useState('light');
@@ -25,9 +26,11 @@ function MyApp({ Component, pageProps }) {
   }, [theme]);
 
   return (
-    <Layout theme={theme} setTheme={setTheme}>
-      <Component {...pageProps} />
-    </Layout>
+    <LanguageProvider>
+      <Layout theme={theme} setTheme={setTheme}>
+        <Component {...pageProps} />
+      </Layout>
+    </LanguageProvider>
   );
 }
 
