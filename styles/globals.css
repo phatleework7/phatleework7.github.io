@@ -291,6 +291,13 @@ main {
   gap: 12px;
 }
 
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
 .nav a {
   color: var(--text);
   text-decoration: none;
@@ -332,8 +339,8 @@ main {
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 35%, var(--border));
 }
 
+.language-toggle,
 .theme-toggle {
-  margin-left: auto;
   border: 1px solid var(--border);
   background: var(--card);
   color: var(--text);
@@ -350,14 +357,22 @@ main {
   --my: 50%;
 }
 
-.theme-toggle:hover { border-color: color-mix(in srgb, var(--ring) 40%, var(--border)); }
-.theme-toggle:active { transform: translateY(1px) scale(0.99); }
+.language-toggle:hover,
+.theme-toggle:hover { 
+  border-color: color-mix(in srgb, var(--ring) 40%, var(--border)); 
+}
+.language-toggle:active,
+.theme-toggle:active { 
+  transform: translateY(1px) scale(0.99); 
+}
+.language-toggle:focus-visible,
 .theme-toggle:focus-visible {
   outline: 2px solid var(--ring);
   outline-offset: 2px;
 }
 
-/* Wave-ish hover for theme toggle */
+/* Wave-ish hover for language and theme toggle */
+.language-toggle:hover,
 .theme-toggle:hover {
   background:
     radial-gradient(140px 140px at var(--mx) var(--my), color-mix(in srgb, var(--primary) 16%, transparent), transparent 60%),
@@ -486,8 +501,16 @@ a:focus-visible, button:focus-visible {
 
 /* Responsive tweaks */
 @media (max-width: 600px) {
-  .nav { flex-wrap: wrap; }
-  .theme-toggle { margin-left: 0; }
+  .nav { 
+    flex-wrap: wrap; 
+    gap: 8px;
+  }
+  .nav-controls { 
+    margin-left: 0; 
+    order: -1;
+    width: 100%;
+    justify-content: flex-end;
+  }
   .contact-links { 
     flex-direction: column; 
     align-items: stretch; 
