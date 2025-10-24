@@ -19,7 +19,7 @@ export default function Hero() {
             Giúp <span className="accent">Doanh Nghiệp Phát Triển</span>
           </h1>
           <p className="hero-subtitle">
-            Tôi giúp bạn tăng tỷ lệ chuyển đổi và hiệu suất website theo mọi cách có thể.
+            Tôi giúp bạn tăng tỷ lệ chuyển đổi và hiệu suất website theo mọi cách có thể..
           </p>
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">Xem công việc của tôi</a>
