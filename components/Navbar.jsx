@@ -1,7 +1,13 @@
 import { useEffect } from 'react';
 import ThemeToggle from './ThemeToggle';
+import LanguageToggle from './LanguageToggle';
+import { useLanguage } from '../contexts/LanguageContext';
+import { translations } from '../data/translations';
 
 export default function Navbar({ theme, setTheme }) {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   useEffect(() => {
     if (typeof window === 'undefined') return;
     let ticking = false;
@@ -46,10 +52,13 @@ export default function Navbar({ theme, setTheme }) {
     <header className="navbar" role="banner" aria-label="Primary">
       <nav className="nav" role="navigation" aria-label="Main">
         <a href="#" className="brand">Lê Thành Phát</a>
-        <a href="#about">Giới thiệu</a>
-        <a href="#projects">Dự án</a>
-        <a href="#contact">Liên hệ</a>
-        <ThemeToggle theme={theme} setTheme={setTheme} />
+        <a href="#about">{t.nav.about}</a>
+        <a href="#projects">{t.nav.projects}</a>
+        <a href="#contact">{t.nav.contact}</a>
+        <div className="nav-controls">
+          <LanguageToggle />
+          <ThemeToggle theme={theme} setTheme={setTheme} />
+        </div>
       </nav>
     </header>
   );

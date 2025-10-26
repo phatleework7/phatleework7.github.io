@@ -11,23 +11,32 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lê Thành Phát - Full Stack Developer</title>
-        <meta name="description" content="Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies and custom website solutions." />
+        <title>
+          {language === 'vi' 
+            ? 'Lê Thành Phát - Full Stack Developer' 
+            : 'Lê Thành Phát - Full Stack Developer'}
+        </title>
+        <meta 
+          name="description" 
+          content={language === 'vi' 
+            ? 'Website cá nhân của Lê Thành Phát, một Full Stack Developer đam mê với công nghệ web hiện đại và giải pháp website tùy chỉnh.'
+            : 'Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies and custom website solutions.'} 
+        />
         <meta name="keywords" content="Lê Thành Phát, developer, full-stack, React, Next.js, JavaScript, TypeScript, web development" />
         <meta name="author" content="Lê Thành Phát" />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://martinle.me/" />
-        <meta property="og:title" content="Lê Thành Phát - Full Stack Developer" />
-        <meta property="og:description" content="Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies." />
+        <meta property="og:title" content={language === 'vi' ? 'Lê Thành Phát - Full Stack Developer' : 'Lê Thành Phát - Full Stack Developer'} />
+        <meta property="og:description" content={language === 'vi' ? 'Website cá nhân của Lê Thành Phát, một Full Stack Developer đam mê với công nghệ web hiện đại.' : 'Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies.'} />
         <meta property="og:image" content="https://martinle.me/og-image.jpg" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://martinle.me/" />
-        <meta property="twitter:title" content="Lê Thành Phát - Full Stack Developer" />
-        <meta property="twitter:description" content="Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies." />
+        <meta property="twitter:title" content={language === 'vi' ? 'Lê Thành Phát - Full Stack Developer' : 'Lê Thành Phát - Full Stack Developer'} />
+        <meta property="twitter:description" content={language === 'vi' ? 'Website cá nhân của Lê Thành Phát, một Full Stack Developer đam mê với công nghệ web hiện đại.' : 'Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies.'} />
         <meta property="twitter:image" content="https://martinle.me/og-image.jpg" />
 
         <link rel="canonical" href="https://martinle.me/" />
