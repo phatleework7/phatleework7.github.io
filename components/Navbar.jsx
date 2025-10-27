@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import Image from 'next/image';
 import ThemeToggle from './ThemeToggle';
 import LanguageToggle from './LanguageToggle';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -51,7 +52,16 @@ export default function Navbar({ theme, setTheme }) {
   return (
     <header className="navbar" role="banner" aria-label="Primary">
       <nav className="nav" role="navigation" aria-label="Main">
-        <a href="#" className="brand">Lê Thành Phát</a>
+        <a href="#" className="brand">
+          <Image 
+            src="/logo.png" 
+            alt="Lê Thành Phát" 
+            width={40} 
+            height={40}
+            priority
+            style={{ objectFit: 'contain' }}
+          />
+        </a>
         <a href="#about">{t.nav.about}</a>
         <a href="#projects">{t.nav.projects}</a>
         <a href="#contact">{t.nav.contact}</a>
