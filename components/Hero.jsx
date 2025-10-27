@@ -66,7 +66,7 @@ export default function Hero() {
             </a>
             <a 
               className="icon-btn" 
-              href="https://linkedin.com/in/phat-le" 
+              href="https://www.linkedin.com/in/martinle-dev" 
               target="_blank" 
               rel="noopener noreferrer" 
               aria-label={`${language === 'vi' ? 'LinkedIn' : 'LinkedIn'} - ${language === 'vi' ? 'Mở trong tab mới' : 'Opens in new tab'}`}

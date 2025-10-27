@@ -30,16 +30,17 @@ export default function Home() {
         <meta property="og:url" content="https://martinle.me/" />
         <meta property="og:title" content={language === 'vi' ? 'Lê Thành Phát - Full Stack Developer' : 'Lê Thành Phát - Full Stack Developer'} />
         <meta property="og:description" content={language === 'vi' ? 'Website cá nhân của Lê Thành Phát, một Full Stack Developer đam mê với công nghệ web hiện đại.' : 'Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies.'} />
-        <meta property="og:image" content="https://martinle.me/og-image.jpg" />
+        <meta property="og:image" content="https://martinle.me/logo.png" />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://martinle.me/" />
         <meta property="twitter:title" content={language === 'vi' ? 'Lê Thành Phát - Full Stack Developer' : 'Lê Thành Phát - Full Stack Developer'} />
         <meta property="twitter:description" content={language === 'vi' ? 'Website cá nhân của Lê Thành Phát, một Full Stack Developer đam mê với công nghệ web hiện đại.' : 'Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies.'} />
-        <meta property="twitter:image" content="https://martinle.me/og-image.jpg" />
+        <meta property="twitter:image" content="https://martinle.me/logo.png" />
 
         <link rel="canonical" href="https://martinle.me/" />
+        <link rel="icon" href="/logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
