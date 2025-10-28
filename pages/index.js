@@ -36,7 +36,7 @@ export default function Home() {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://martinle.me/" />
         <meta property="twitter:title" content={language === 'vi' ? 'Lê Thành Phát - Full Stack Developer' : 'Lê Thành Phát - Full Stack Developer'} />
-        <meta property="twitter:description" content={language === 'vi' ? 'Website cá nhân của Lê Thành Phát, một Full Stack Developer đam mê với công nghệ web hiện đại.' : 'Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies.'} />
+        <meta property="twitter:description" content={language === 'vi' ? 'Website cá nhân của Lê Thành Phát, một Full Stack Developer đam mê với công nghệ web hiện đại..' : 'Personal website of Lê Thành Phát, a passionate full-stack developer specializing in modern web technologies.'} />
         <meta property="twitter:image" content="https://martinle.me/logo.png" />
 
         <link rel="canonical" href="https://martinle.me/" />
